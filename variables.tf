@@ -1,0 +1,11 @@
+variable "flavor" { default = "m1.large" }
+variable "image1" { default = "CentOS 7 1901" }
+variable "image2" { default = "CentOS 7 1901" }
+variable "name1" { default = "Project" }
+variable "name2" { default = "Jenkins" }
+variable "keypair" { default = "cloud" } # you may need to change this
+variable "pool" { default = "cscloud_private_floating" }
+variable "server1_script" { default = "./project.sh" }
+variable "server2_script" { default = "./jenkins.sh" }
+variable "security_description" { default = "Terraform security group" }
+variable "security_name" { default = "tf_security" }
